@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="276.0" prefWidth="222.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox layoutX="-1.0" prefHeight="80.0" prefWidth="234.0">
+         <children>
+            <Label fx:id="output" alignment="CENTER" prefHeight="80.0" prefWidth="269.0" style="-fx-background-color: #8DD392;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="-1.0" layoutY="74.0" prefHeight="204.0" prefWidth="234.0" style="-fx-background-color: #4D9752;">
+         <children>
+            <Button layoutX="12.0" layoutY="50.0" mnemonicParsing="false" onAction="#processNumber" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="7">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button layoutX="12.0" layoutY="88.0" mnemonicParsing="false" onAction="#processNumber" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="4">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button layoutX="12.0" layoutY="125.0" mnemonicParsing="false" onAction="#processNumber" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="1">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#backSpace" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="&lt;--">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button layoutX="12.0" layoutY="161.0" mnemonicParsing="false" onAction="#processNumber" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: #8DD392;" text="0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button layoutX="55.0" layoutY="125.0" mnemonicParsing="false" onAction="#processNumber" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="2" />
+            <Button layoutX="55.0" layoutY="88.0" mnemonicParsing="false" onAction="#processNumber" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="5" />
+            <Button layoutX="55.0" layoutY="50.0" mnemonicParsing="false" onAction="#processNumber" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="8" />
+            <Button layoutX="141.0" layoutY="50.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="/" />
+            <Button layoutX="141.0" layoutY="88.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="*" />
+            <Button layoutX="141.0" layoutY="125.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="-" />
+            <Button layoutX="141.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="+-" />
+            <Button layoutX="141.0" layoutY="161.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="+" />
+            <Button layoutX="98.0" layoutY="161.0" mnemonicParsing="false" onAction="#dotAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="." />
+            <Button layoutX="98.0" layoutY="14.0" mnemonicParsing="false" onAction="#makeNull" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="C" />
+            <Button layoutX="98.0" layoutY="125.0" mnemonicParsing="false" onAction="#processNumber" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="3" />
+            <Button layoutX="98.0" layoutY="88.0" mnemonicParsing="false" onAction="#processNumber" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="6" />
+            <Button layoutX="98.0" layoutY="50.0" mnemonicParsing="false" onAction="#processNumber" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="9">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </Button>
+            <Button layoutX="184.0" layoutY="126.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="65.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="=" />
+            <Button layoutX="184.0" layoutY="14.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="√" />
+            <Button layoutX="184.0" layoutY="88.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="1/x">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="184.0" layoutY="50.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="\%" />
+            <Button layoutX="55.0" layoutY="14.0" mnemonicParsing="false" onAction="#makeNull" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #8DD392;" text="CE" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </children>
+</Pane>
